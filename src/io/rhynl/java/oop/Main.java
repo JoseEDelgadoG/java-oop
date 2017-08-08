@@ -23,6 +23,9 @@
  */
 package io.rhynl.java.oop;
 
+import io.rhynl.java.musicfy.Cancion;
+import io.rhynl.java.musicfy.Reproductor;
+
 /**
  *
  * @author Rhaynel Parra Aguiar <mail@rhynl.io>
@@ -34,6 +37,40 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    Cancion[] topTen = {
+            new Cancion(
+                    "Despacito",
+                    "Luis Fonsi",
+                    "Balada",
+                    "30/02/2016",
+                    300
+            ),
+            new Cancion(
+                    "Despacito",
+                    "Luis Fonsi",
+                    "Balada",
+                    "30/02/2016",
+                    300
+            ),
+            new Cancion(
+                    "Despacito",
+                    "Luis Fonsi",
+                    "Balada",
+                    "30/02/2016",
+                    300
+            ),
+            new Cancion(
+                    "Despacito",
+                    "Luis Fonsi",
+                    "Balada",
+                    "30/02/2016",
+                    300
+            )        
+        };
+        
+        Reproductor reproductor = new Reproductor(topTen);
+        
+        reproductor.ReproducirLista();
+        
     }
-    
 }

@@ -10,55 +10,42 @@ package io.rhynl.java.musicfy;
  * @author Rhaynel Parra Aguiar <mail@rhynl.io>
  */
 public class Cancion {
-    String autor;
+    private String nombre;
+    String artista;
     String genero;
-    String publicacion; // fecha de publicación
-    int duracion; //en segundos
+    String lanzamiento; // fecha de lanzamiento
+    int duracion; // en segundos
     
     /**
-     * Crea una nueva canción
-     * @param autor
-     * @param genero
-     * @param publicacion
-     * @param duracion 
+     * Permite crear un objeto cancion
+     * @param nombre nombre de la cancion
+     * @param artista nombre de artista
+     * @param genero genero de la cancion
+     * @param lanzamiento fecha de lanzamiento
+     * @param duracion duracion en segundos de la cancion
      */
-    public Cancion(String autor, String genero, String publicacion, int duracion) {
-        this.autor = autor;
+    public Cancion(String nombre, String artista, String genero, String lanzamiento, int duracion) {
+        this.nombre = nombre;
+        this.artista = artista;
         this.genero = genero;
-        this.publicacion = publicacion;
+        this.lanzamiento = lanzamiento;
         this.duracion = duracion;
     }
     
-    public String getAutor() {
-        return autor;
+    public void reproducir() {
+        System.out.println("Playing...");
     }
     
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void parar() {
+        System.out.println("stoped...");
     }
     
-    public String getGenero() {
-        return genero;
+    public String getNombre() {
+        return nombre;
     }
     
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-    
-    public String getPublicacion() {
-        return publicacion;
-    }
-    
-    public void setPublicacion(String publicacion) {
-        this.publicacion = publicacion;
-    }
-    
-    public int getDuracion() {
-        return duracion;
-    }
-    
-    public void setDuracion(int duracion) {
-        this.duracion = duracion;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
 }
